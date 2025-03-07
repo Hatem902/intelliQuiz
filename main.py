@@ -90,7 +90,11 @@ def fetch_questions(text_content, user_prompt, quiz_level, num_questions):
         return []
 
 def main():
-    st.title("Advanced Quiz Generator App")
+    st.markdown("""
+        # IntelliQuizz  
+        ### AI-Powered Quizzes, Tailored to Your Content in Seconds! &nbsp;  
+    """,)
+    
 
     # File uploader for PDF
     uploaded_file = st.file_uploader("Upload a PDF file containing course material", type="pdf")
